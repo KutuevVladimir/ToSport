@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
 import com.vkutuev.tosport.chats.ChatsFragment
+import com.vkutuev.tosport.map.MapFragment
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,12 +21,17 @@ class MainActivity : AppCompatActivity() {
         mNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
     }
 
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+    }
+
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener {
         var fragment: Fragment? = null
         val result = when (it.itemId) {
             R.id.navigation_map -> {
                 if (mCurrentFragmentId != R.id.navigation_map) {
                     mCurrentFragmentId = R.id.navigation_map
+                    fragment = MapFragment()
                 }
                 true
             }
@@ -38,6 +45,7 @@ class MainActivity : AppCompatActivity() {
             R.id.navigation_account -> {
                 if (mCurrentFragmentId != R.id.navigation_account) {
                     mCurrentFragmentId = R.id.navigation_account
+                    fragment = null
                 }
 
                 true

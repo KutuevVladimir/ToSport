@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ToSport</string>
+    <string name="app_name">2Sport</string>
     <string name="fragment_title_map">Sports grounds</string>
     <string name="fragment_title_chats">Chats</string>
     <string name="fragment_title_account">Account</string>
