@@ -13,6 +13,8 @@ MERGED from [com.google.android.gms:play-services-base:12.0.1] /home/admin/.grad
 MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/5266548bfd10a3bbd79d09928201af6c/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:12.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/f3282162d32f20460b5711dd68564456/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:27.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/6d5731750a5fbd2cd2c8093ad6c388c2/AndroidManifest.xml:17:1-22:12
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/cc456ca42efe6fc13a4e608519028361/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:27.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/a10fb92fa679f6e1a1eccca88931f8aa/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/9e86d8139cc3b54bab2b1a01d50de4c2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/9747e24ae6f01f6be8efd452a94d0e2e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.0.aar/e51440401ab2c7b4c4b70a776a436572/AndroidManifest.xml:17:1-22:12
@@ -72,6 +74,8 @@ MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /home/admin/.gra
 MERGED from [com.google.android.gms:play-services-tasks:12.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-12.0.1.aar/5266548bfd10a3bbd79d09928201af6c/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:12.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/f3282162d32f20460b5711dd68564456/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:12.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/f3282162d32f20460b5711dd68564456/AndroidManifest.xml:22:5-26:19
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/cc456ca42efe6fc13a4e608519028361/AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/cc456ca42efe6fc13a4e608519028361/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-maps-license:12.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-12.0.1.aar/93fc8b02bb9c2829d9a0e024834ff0c0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-maps-license:12.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-license-12.0.1.aar/93fc8b02bb9c2829d9a0e024834ff0c0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-location-license:12.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-location-license-12.0.1.aar/676c7671ce3833662911a0b145185418/AndroidManifest.xml:22:5-20
@@ -136,6 +140,10 @@ MERGED from [com.google.android.gms:play-services-basement:12.0.1] /home/admin/.
 MERGED from [com.google.android.gms:play-services-basement:12.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-12.0.1.aar/f3282162d32f20460b5711dd68564456/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/6d5731750a5fbd2cd2c8093ad6c388c2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.0.aar/6d5731750a5fbd2cd2c8093ad6c388c2/AndroidManifest.xml:20:5-44
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/cc456ca42efe6fc13a4e608519028361/AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/cc456ca42efe6fc13a4e608519028361/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:27.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/a10fb92fa679f6e1a1eccca88931f8aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.0.aar/a10fb92fa679f6e1a1eccca88931f8aa/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/9e86d8139cc3b54bab2b1a01d50de4c2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.0.aar/9e86d8139cc3b54bab2b1a01d50de4c2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.0.aar/9747e24ae6f01f6be8efd452a94d0e2e/AndroidManifest.xml:20:5-44

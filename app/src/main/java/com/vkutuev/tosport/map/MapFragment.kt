@@ -10,7 +10,6 @@ import android.view.View
 import android.view.ViewGroup
 import com.google.android.gms.maps.*
 import com.vkutuev.tosport.R
-import kotlinx.android.synthetic.main.map_layout.view.*
 
 const val PERMISSION_LOCATION = 1
 
@@ -36,7 +35,6 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         return mapFragmentView
     }
 
-    @SuppressLint("NewApi")
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
         if (ContextCompat.checkSelfPermission(activity, android.Manifest.permission.ACCESS_FINE_LOCATION)
