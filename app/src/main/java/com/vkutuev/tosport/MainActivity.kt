@@ -4,7 +4,7 @@ import android.app.Fragment
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
-import com.vkutuev.tosport.chats.ChatsFragment
+import com.vkutuev.tosport.chats.ChatsNavigationFragment
 import com.vkutuev.tosport.map.MapFragment
 
 
@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             R.id.navigation_chats -> {
                 if (mCurrentFragmentId != R.id.navigation_chats) {
                     mCurrentFragmentId = R.id.navigation_chats
-                    fragment = ChatsFragment()
+                    fragment = ChatsNavigationFragment()
                 }
                 true
             }

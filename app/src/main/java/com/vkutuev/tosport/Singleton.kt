@@ -2,6 +2,7 @@ package com.vkutuev.tosport
 
 import com.vkutuev.tosport.model.MockServerAPI
 import com.vkutuev.tosport.model.ServerAPI
+import com.vkutuev.tosport.model.User
 
 class Singleton private constructor() {
     private object Holder {val INSTANCE = Singleton()}
@@ -11,4 +12,6 @@ class Singleton private constructor() {
     }
 
     val serverAPI: ServerAPI = MockServerAPI() // TODO change mock implementation to real
+
+    var activeUser: User? = serverAPI.getUserById(0) // TODO change getting active user
 }

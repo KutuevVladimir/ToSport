@@ -5,12 +5,13 @@ import com.vkutuev.tosport.Singleton
 class User(val id: Int,
            val username: String) {
     val chatsList: ArrayList<Chat> by lazy {
-        val api = Singleton.instance.serverAPI
-        return@lazy ArrayList(api.getUserChatsList(id))
+        val result = Singleton.instance.serverAPI.getUserChatsList(id) ?: return@lazy ArrayList<Chat>()
+        return@lazy ArrayList(result)
     }
 
+    // TODO change friends getting politic if it will be necessary
     val friendsList: ArrayList<User> by lazy {
-        val api = Singleton.instance.serverAPI
-        return@lazy ArrayList(api.getUserFriendsList(id))
+        val result = Singleton.instance.serverAPI.getUserFriendsList(id) ?:return@lazy ArrayList<User>()
+        return@lazy ArrayList(result)
     }
 }
