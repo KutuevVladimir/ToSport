@@ -4,7 +4,7 @@
             "outputFile": "/home/admin/Documents/Android/ToSport/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/admin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.0.aar/4c33d868310fe4ee477c99404d9063fc/res/values-v24/values-v24.xml",
+                    "source": "/home/admin/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/0b4d7bd5a19546b0a5a1953605d61549/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.0.aar/36802203db5bc25939771f327b9b11c3/res/values-v24/values-v24.xml",
+                    "source": "/home/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9b2d7194c2e60f11f7f740be1c2b99e0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

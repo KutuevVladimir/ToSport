@@ -9,15 +9,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.gms.maps.*
+import com.google.maps.android.clustering.ClusterManager
+import com.google.maps.android.clustering.algo.NonHierarchicalDistanceBasedAlgorithm
 import com.vkutuev.tosport.R
 import com.vkutuev.tosport.Singleton
-import java.util.*
 
 const val PERMISSION_LOCATION = 1
 
 class MapFragment : Fragment(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
+    private lateinit var mClusterManager: ClusterManager<AbstractMarker>
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val mapFragmentView = inflater?.inflate(R.layout.map_layout, container, false)!!
@@ -39,10 +41,20 @@ class MapFragment : Fragment(), OnMapReadyCallback {
 
     override fun onMapReady(googleMap: GoogleMap) {
         mMap = googleMap
+        mClusterManager = ClusterManager(context, mMap)
+
+        mMap.setOnCameraMoveListener {
+            mClusterManager.cluster()
+        }
+
+
+        mClusterManager.setOnClusterItemClickListener(mOnClusterItemClickListener)
+
+        mMap.setOnMarkerClickListener(mClusterManager)
 
         val sportsGrounds = Singleton.instance.serverAPI.getSportsGroundsList()
         sportsGrounds.forEach {
-            // TODO add markers to map
+            mClusterManager.addItem(CustomMarker(it.id, it.sport.toString(), it.information, it.coordinates))
         }
 
         if (ContextCompat.checkSelfPermission(activity, android.Manifest.permission.ACCESS_FINE_LOCATION)
@@ -52,6 +64,21 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         else {
             requestPermissions(arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION), PERMISSION_LOCATION)
         }
+    }
+
+    private val mOnClusterItemClickListener = ClusterManager.OnClusterItemClickListener<AbstractMarker> {
+
+        val sg = Singleton.instance.serverAPI.getSportsGroundInformation(it.sportsGroundId)
+        val sgFragment = SportsGroundFragment()
+        val bundle = Bundle()
+        bundle.putInt("id", it.sportsGroundId)
+        sgFragment.arguments = bundle
+        Singleton.instance.fragmentManager.beginTransaction()
+                .replace(R.id.content_frame, sgFragment)
+                .addToBackStack(sgFragment.toString())
+                .commit()
+
+        true
     }
 
     @SuppressLint("MissingPermission")
@@ -67,4 +94,6 @@ class MapFragment : Fragment(), OnMapReadyCallback {
             }
         }
     }
+
+
 }
