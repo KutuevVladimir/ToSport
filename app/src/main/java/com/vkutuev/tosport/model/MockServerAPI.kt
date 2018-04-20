@@ -1,5 +1,7 @@
 package com.vkutuev.tosport.model
 
+import android.graphics.Bitmap
+
 class MockServerAPI: ServerAPI {
 
     private val users = HashMap<Int, String>()
@@ -35,6 +37,10 @@ class MockServerAPI: ServerAPI {
 
     override fun updateUser(user: User): Int {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun getUserAvatar(userId: Int): Bitmap? {
+        return null
     }
 
     override fun getChatMembers(chatId: Int): List<User>? =
@@ -98,6 +104,12 @@ class MockServerAPI: ServerAPI {
         return sportsGround[sportsGroundId]
     }
 
+    override fun getSportsGroundAdmin(sportsGroundId: Int): User =
+        when (sportsGroundId) {
+            0, 1 -> getUserById(0)!!
+            else -> getUserById(1)!!
+        }
+
     override fun createSportsGround(sportsGround: SportsGround) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
@@ -138,7 +150,22 @@ class MockServerAPI: ServerAPI {
 
     override fun getChatMessages(chatId: Int): List<Message>? =
             when(chatId) {
-                0 -> null
+                0 -> {
+                    val messages = ArrayList<Message>()
+                    messages.add(Message("Hello", null, getUserById(0)!!))
+                    messages.add(Message("Hi", null, getUserById(1)!!))
+                    messages.add(Message("W", null, getUserById(0)!!))
+                    messages.add(Message("H", null, getUserById(0)!!))
+                    messages.add(Message("A", null, getUserById(0)!!))
+                    messages.add(Message("T", null, getUserById(0)!!))
+                    messages.add(Message("S", null, getUserById(0)!!))
+                    messages.add(Message("U", null, getUserById(0)!!))
+                    messages.add(Message("P", null, getUserById(0)!!))
+                    messages.add(Message("S", null, getUserById(0)!!))
+                    messages.add(Message("?", null, getUserById(0)!!))
+                    messages.add(Message("Great!", null, getUserById(1)!!))
+                    messages
+                }
                 1 -> null
                 2 -> null
                 3 -> null

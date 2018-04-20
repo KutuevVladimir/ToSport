@@ -12,7 +12,7 @@ import com.vkutuev.tosport.Singleton
 
 class ChatsNavigationFragment : Fragment() {
 
-    private lateinit var recyclerView: RecyclerView
+//    private lateinit var recyclerView: RecyclerView
     private var chatCards: ArrayList<ChatCardData>
 
     init {
@@ -28,7 +28,7 @@ class ChatsNavigationFragment : Fragment() {
         val chatsLayout = inflater!!.inflate(R.layout.chats_layout, container, false)
         // TODO Нормально обработать, если null
 
-        recyclerView = chatsLayout.findViewById<RecyclerView>(R.id.recycler_view_chats).apply {
+        val recyclerView = chatsLayout.findViewById<RecyclerView>(R.id.recycler_view_chats).apply {
             adapter = ChatsRecyclerViewAdapter(chatCards)
             layoutManager = LinearLayoutManager(context)
         }

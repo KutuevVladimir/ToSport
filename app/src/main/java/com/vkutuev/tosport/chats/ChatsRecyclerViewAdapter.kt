@@ -8,9 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.vkutuev.tosport.R
 
-class ChatsRecyclerViewAdapter(cards: ArrayList<ChatCardData>) : RecyclerView.Adapter<ChatsRecyclerViewAdapter.ViewHolder>() {
-
-    private val chatCards = cards
+class ChatsRecyclerViewAdapter(private val chatCards: ArrayList<ChatCardData>) : RecyclerView.Adapter<ChatsRecyclerViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.chat_card, parent, false)
@@ -36,7 +34,7 @@ class ChatsRecyclerViewAdapter(cards: ArrayList<ChatCardData>) : RecyclerView.Ad
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val chatTitle: TextView = itemView.findViewById(R.id.chat_card_title)
         val chatMessage: TextView = itemView.findViewById(R.id.chat_card_message)
-        val chatIcon: ImageView = itemView.findViewById(R.id.chat_card_photo)
+        val chatIcon: ImageView = itemView.findViewById(R.id.message_card_left_sender_photo)
         val divider: View = itemView.findViewById(R.id.chat_card_divider)
     }
 }

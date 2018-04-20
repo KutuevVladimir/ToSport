@@ -4016,7 +4016,7 @@ public final class R {
     public static final int chains=0x7f08002d;
     public static final int chat_card_divider=0x7f08002e;
     public static final int chat_card_message=0x7f08002f;
-    public static final int chat_card_photo=0x7f080030;
+    public static final int message_card_left_sender_photo =0x7f080030;
     public static final int chat_card_title=0x7f080031;
     public static final int checkbox=0x7f080032;
     public static final int chronometer=0x7f080033;

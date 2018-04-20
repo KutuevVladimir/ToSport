@@ -3,7 +3,7 @@
     <string name="fragment_title_map">Sports grounds</string>
     <string name="fragment_title_chats">Chats</string>
     <string name="fragment_title_account">Account</string>
-    <string name="sports_ground_admin">Admin of this sports ground is </string> <!-- TODO add placeholder -->
+    <string name="sports_ground_admin">Admin of this sports ground is %s</string>
     <string name="sports_ground_title">Kind of sport: %s</string>
     <string name="sports_ground_info">Information about spots ground: %s</string>
 </resources>

@@ -10,9 +10,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.google.android.gms.maps.*
 import com.google.maps.android.clustering.ClusterManager
-import com.google.maps.android.clustering.algo.NonHierarchicalDistanceBasedAlgorithm
 import com.vkutuev.tosport.R
 import com.vkutuev.tosport.Singleton
+import com.vkutuev.tosport.map.sportsground.SportsGroundFragment
 
 const val PERMISSION_LOCATION = 1
 
