@@ -4,7 +4,7 @@
             "outputFile": "/home/admin/Documents/Android/ToSport/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml",
             "map": [
                 {
-                    "source": "/home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.0.aar/27d8ca38594cf1dc57c427d730610a58/res/values-my/values.xml",
+                    "source": "/home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.0.aar/98d4cde2f0ee7667d5ca8167ca76f527/res/values-my/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,24 +21,24 @@
                     }
                 },
                 {
-                    "source": "/home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.0.aar/8d697fd86566f70415a82837bb374cc9/res/values-my/values.xml",
+                    "source": "/home/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/2ff56264fa9c1646da6f312006c5c2e9/res/values-my/values-my.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "212",
-                        "endOffsets": "459"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "27",
+                        "startLines": "38",
                         "startColumns": "4",
-                        "startOffsets": "3142",
-                        "endColumns": "212",
-                        "endOffsets": "3350"
+                        "startOffsets": "4883",
+                        "endColumns": "100",
+                        "endOffsets": "4979"
                     }
                 },
                 {
-                    "source": "/home/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/9b2d7194c2e60f11f7f740be1c2b99e0/res/values-my/values-my.xml",
+                    "source": "/home/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6c627dfb741c33a894b87fc8e106e8f8/res/values-my/values-my.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -55,20 +55,20 @@
                     }
                 },
                 {
-                    "source": "/home/admin/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/d8f3f52d9fbba87cafe06b5ca20160fe/res/values-my/values-my.xml",
+                    "source": "/home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.0.aar/b9243ef20349b7060651fa16d99f5a11/res/values-my/values.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "212",
+                        "endOffsets": "459"
                     },
                     "to": {
-                        "startLines": "38",
+                        "startLines": "27",
                         "startColumns": "4",
-                        "startOffsets": "4883",
-                        "endColumns": "100",
-                        "endOffsets": "4979"
+                        "startOffsets": "3142",
+                        "endColumns": "212",
+                        "endOffsets": "3350"
                     }
                 }
             ]

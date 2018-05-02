@@ -14,6 +14,7 @@ interface ServerAPI {
     fun getUserAvatar(userId: Int): Bitmap?
     fun getChatMessages(chatId: Int): List<Message>?
     fun getChatMembers(chatId: Int): List<User>?
+    fun getChatPhoto(chatId: Int): Bitmap?
     fun getSportsGroundsList(): List<SportsGround>
     fun getSportsGroundInformation(sportsGroundId: Int): SportsGround?
     fun getSportsGroundAdmin(sportsGroundId: Int): User

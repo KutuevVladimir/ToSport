@@ -166,14 +166,11 @@ class MockServerAPI: ServerAPI {
                     messages.add(Message("Great!", null, getUserById(1)!!))
                     messages
                 }
-                1 -> null
-                2 -> null
-                3 -> null
-                4 -> null
-                5 -> null
-                6 -> null
-                7 -> null
-                8 -> null
+                1,2,3,4,5,6,7,8 -> ArrayList()
                 else -> null
             }
+
+    override fun getChatPhoto(chatId: Int): Bitmap? {
+        return null
+    }
 }

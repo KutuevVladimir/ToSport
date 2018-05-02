@@ -13,6 +13,10 @@ import com.google.maps.android.clustering.ClusterManager
 import com.vkutuev.tosport.R
 import com.vkutuev.tosport.Singleton
 import com.vkutuev.tosport.map.sportsground.SportsGroundFragment
+import kotlinx.coroutines.experimental.CommonPool
+import kotlinx.coroutines.experimental.android.UI
+import kotlinx.coroutines.experimental.async
+import kotlinx.coroutines.experimental.launch
 
 const val PERMISSION_LOCATION = 1
 
@@ -46,15 +50,17 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         mMap.setOnCameraMoveListener {
             mClusterManager.cluster()
         }
-
-
         mClusterManager.setOnClusterItemClickListener(mOnClusterItemClickListener)
-
         mMap.setOnMarkerClickListener(mClusterManager)
 
-        val sportsGrounds = Singleton.instance.serverAPI.getSportsGroundsList()
-        sportsGrounds.forEach {
-            mClusterManager.addItem(CustomMarker(it.id, it.sport.toString(), it.information, it.coordinates))
+        launch(UI) {
+            val sportsGrounds = async(CommonPool) {
+                Singleton.instance.serverAPI.getSportsGroundsList()
+            }.await()
+
+            sportsGrounds.forEach {
+                mClusterManager.addItem(CustomMarker(it.id, it.sport.toString(), it.information, it.coordinates))
+            }
         }
 
         if (ContextCompat.checkSelfPermission(activity, android.Manifest.permission.ACCESS_FINE_LOCATION)

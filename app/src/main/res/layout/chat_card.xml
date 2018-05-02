@@ -7,7 +7,7 @@
     android:background="@color/colorDialogCardBackground">
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/message_card_left_sender_photo"
+        android:id="@+id/chat_card_photo"
         android:layout_width="48dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
@@ -40,7 +40,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/chat_card_message"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/message_card_left_sender_photo"
+        app:layout_constraintStart_toEndOf="@+id/chat_card_photo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread" />
 
@@ -55,6 +55,6 @@
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/message_card_left_sender_photo"
+        app:layout_constraintStart_toEndOf="@+id/chat_card_photo"
         app:layout_constraintTop_toBottomOf="@+id/chat_card_title" />
 </android.support.constraint.ConstraintLayout>
