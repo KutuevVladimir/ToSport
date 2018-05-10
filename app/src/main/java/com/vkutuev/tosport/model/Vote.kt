@@ -1,4 +1,4 @@
-package com.vkutuev.tosport.model.vote
+package com.vkutuev.tosport.model
 
 open class Vote(open val variants: ArrayList<Pair<String, Int>>,
                 open val respondingIds: MutableList<Int>)

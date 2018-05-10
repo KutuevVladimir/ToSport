@@ -11,7 +11,7 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import com.vkutuev.tosport.R
 import com.vkutuev.tosport.Singleton
-import com.vkutuev.tosport.model.vote.Vote
+import com.vkutuev.tosport.model.Vote
 
 const val BUTTON = 0
 const val VOTE_VARIANT = 1
@@ -38,7 +38,6 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
                 else -> ButtonViewHolder(Button(parent.context))
             }
 
-
     override fun getItemViewType(position: Int): Int =
         when (position) {
             vote.variants.size -> BUTTON
@@ -50,7 +49,6 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
             vote.variants.size
         else
             vote.variants.size + 1
-
 
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
@@ -87,7 +85,6 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
             vote.variants[it] = Pair(vote.variants[it].first, vote.variants[it].second + 1)
         }
         notifyDataSetChanged()
-
     }
 
     class VoteElementViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

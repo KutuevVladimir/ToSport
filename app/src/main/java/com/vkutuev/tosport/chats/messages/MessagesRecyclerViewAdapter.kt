@@ -6,7 +6,6 @@ import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.LinearLayout.LayoutParams
@@ -14,7 +13,7 @@ import android.widget.TextView
 import com.vkutuev.tosport.R
 import com.vkutuev.tosport.Singleton
 import com.vkutuev.tosport.model.Message
-import com.vkutuev.tosport.model.vote.MapVote
+import com.vkutuev.tosport.model.MapVote
 import com.vkutuev.tosport.chats.messages.MessagesRecyclerViewAdapter.ViewHolder
 
 const val CARD_LEFT = 2
@@ -51,16 +50,6 @@ class MessagesRecyclerViewAdapter(private val messages: ArrayList<Message>) : Re
         recyclerView.id = mVoteRecyclerViewId
         linearLayout.addView(recyclerView)
 
-        // If necessary Add button
-//        if (viewType % VOTE_ANSWERED == 0)
-//            return ViewHolder(view)
-//        val btParams = LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT)
-//        val button = Button(linearLayout.context)
-//        button.layoutParams = btParams
-//        button.id = mVoteButtonId
-//        linearLayout.addView(button)
-
-
         return ViewHolder(view)
     }
 
@@ -73,7 +62,6 @@ class MessagesRecyclerViewAdapter(private val messages: ArrayList<Message>) : Re
         }
         return result
     }
-
 
     override fun getItemCount(): Int = messages.size
 

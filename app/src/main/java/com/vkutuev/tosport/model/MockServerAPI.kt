@@ -1,7 +1,6 @@
 package com.vkutuev.tosport.model
 
 import android.graphics.Bitmap
-import com.vkutuev.tosport.model.vote.Vote
 
 class MockServerAPI: ServerAPI {
 
@@ -37,13 +36,13 @@ class MockServerAPI: ServerAPI {
         var responding = ArrayList<Int>()
         responding.add(0)
         responding.add(1)
-        votes.add(Vote(variants,responding))
+        votes.add(Vote(variants, responding))
 
         variants = ArrayList()
         variants.add(Pair("18:00", 0))
         variants.add(Pair("18:30", 0))
         responding = ArrayList()
-        votes.add(Vote(variants,responding))
+        votes.add(Vote(variants, responding))
 
     }
 
