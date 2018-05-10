@@ -1,11 +1,13 @@
 package com.vkutuev.tosport.model
 
 import android.graphics.Bitmap
+import com.vkutuev.tosport.model.vote.Vote
 
 class MockServerAPI: ServerAPI {
 
     private val users = HashMap<Int, String>()
     private val sportsGround = ArrayList<SportsGround>()
+    private val votes = ArrayList<Vote>()
 
 
     init {
@@ -28,6 +30,20 @@ class MockServerAPI: ServerAPI {
         sportsGround.add(SportsGround(5, Pair(59.873380, 29.826348), SportsKinds.Basketball, "Test3"))
         sportsGround.add(SportsGround(6, Pair(59.873600, 29.826848), SportsKinds.Basketball, "Test4"))
         sportsGround.add(SportsGround(7, Pair(59.874100, 29.826948), SportsKinds.Basketball, "Test5"))
+
+        var variants = ArrayList<Pair<String, Int>>()
+        variants.add(Pair("16:00", 2))
+        variants.add(Pair("17:30", 1))
+        var responding = ArrayList<Int>()
+        responding.add(0)
+        responding.add(1)
+        votes.add(Vote(variants,responding))
+
+        variants = ArrayList()
+        variants.add(Pair("18:00", 0))
+        variants.add(Pair("18:30", 0))
+        responding = ArrayList()
+        votes.add(Vote(variants,responding))
 
     }
 
@@ -164,6 +180,8 @@ class MockServerAPI: ServerAPI {
                     messages.add(Message("S", null, getUserById(0)!!))
                     messages.add(Message("?", null, getUserById(0)!!))
                     messages.add(Message("Great!", null, getUserById(1)!!))
+                    messages.add(Message("What time you prefer?", votes[0], getUserById(0)!!))
+                    messages.add(Message("Maybe like this?", votes[1], getUserById(1)!!))
                     messages
                 }
                 1,2,3,4,5,6,7,8 -> ArrayList()

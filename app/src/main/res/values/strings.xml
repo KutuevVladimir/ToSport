@@ -7,4 +7,6 @@
     <string name="sports_ground_title">Kind of sport: %s</string>
     <string name="sports_ground_info">Information about spots ground: %s</string>
     <string name="no_message_in_chat">There are not messages in chat</string>
+    <string name="vote_button_text">Vote</string>
+    <!--<string name="vote_variant">%d) %s</string>-->
 </resources>
