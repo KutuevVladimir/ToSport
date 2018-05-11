@@ -1,22 +1,33 @@
 package com.vkutuev.tosport.chats.messages
 
 import android.annotation.SuppressLint
+import android.os.Bundle
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.ViewGroup.LayoutParams
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.ProgressBar
 import android.widget.TextView
+import com.google.android.gms.maps.*
+import com.google.android.gms.maps.model.CameraPosition
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.LatLngBounds
+import com.google.android.gms.maps.model.MarkerOptions
 import com.vkutuev.tosport.R
 import com.vkutuev.tosport.Singleton
+import com.vkutuev.tosport.model.MapVote
 import com.vkutuev.tosport.model.Vote
 
 const val BUTTON = 0
 const val VOTE_VARIANT = 1
+const val MAP = 2
 
-class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<RecyclerView.ViewHolder>(), OnMapReadyCallback {
+
+    private val mPositionOffset = if (vote is MapVote) -1 else 0
     private val mMaxVotesCount: Int
         get() {
             var temp = vote.variants[0].second
@@ -26,8 +37,23 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
             }
             return temp
         }
+    private val mCheckedVariants = HashSet<Int>()
 
-    private val checkedVariants = HashSet<Int>()
+    private val mMapId = View.generateViewId()
+    private lateinit var mGoogleMap: GoogleMap
+    private val cameraPosition: LatLng by lazy {
+        var latitude = 0.0
+        var longitude = 0.0
+        if (vote is MapVote) {
+            vote.points.forEach {
+                latitude += it.first
+                longitude += it.second
+            }
+            latitude /= vote.points.size
+            longitude /= vote.points.size
+        }
+        return@lazy LatLng(latitude, longitude)
+    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder =
             when (viewType) {
@@ -35,30 +61,53 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
                     val view = LayoutInflater.from(parent.context).inflate(R.layout.vote_layout, parent, false)
                     VoteElementViewHolder(view)
                 }
+                MAP -> {
+//                    val mapFragmentView = LayoutInflater
+//                            .from(parent.context)
+//                            .inflate(R.layout.map_layout, parent, false)!!
+//                    MapViewHolder(mapFragmentView)
+                    val mapOptions = GoogleMapOptions()
+                            .liteMode(true)
+                            .camera(CameraPosition(cameraPosition, 10f, 0f, 0f))
+                    val map = MapView(parent.context, mapOptions).apply {
+                        id = mMapId
+                        layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, 480)
+                    }
+                    MapViewHolder(map)
+                }
                 else -> ButtonViewHolder(Button(parent.context))
             }
 
     override fun getItemViewType(position: Int): Int =
-        when (position) {
-            vote.variants.size -> BUTTON
+        when {
+            vote is MapVote -> when (position) {
+                0 -> MAP
+                vote.variants.size + 1 -> BUTTON
+                else -> VOTE_VARIANT
+            }
+            position == vote.variants.size-> BUTTON
             else -> VOTE_VARIANT
         }
 
-    override fun getItemCount() =
-        if (vote.respondingIds.contains(Singleton.instance.activeUser!!.id))
-            vote.variants.size
-        else
-            vote.variants.size + 1
+    override fun getItemCount(): Int {
+        var count = vote.variants.size
+        if (!vote.respondingIds.contains(Singleton.instance.activeUser!!.id))
+            count++
+        if (vote is MapVote)
+            count++
+        return count
+    }
 
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
         when (getItemViewType(position)) {
             VOTE_VARIANT -> {
+                val index = position + mPositionOffset
                 holder as VoteElementViewHolder
-                holder.text?.text = "${position + 1}) ${vote.variants[position].first}"
+                holder.text?.text = "${position + 1}) ${vote.variants[index].first}"
                 holder.progressBar?.apply {
                     max = mMaxVotesCount
-                    progress = vote.variants[position].second
+                    progress = vote.variants[index].second
                 }
 
                 if (vote.respondingIds.contains(Singleton.instance.activeUser!!.id))
@@ -66,10 +115,19 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
                 else
                     holder.checkBox?.setOnCheckedChangeListener { buttonView, isChecked ->
                         if (isChecked)
-                            checkedVariants.add(position)
+                            mCheckedVariants.add(index)
                         else
-                            checkedVariants.remove(position)
+                            mCheckedVariants.remove(index)
                     }
+            }
+            MAP -> {
+                holder as MapViewHolder
+                holder.map.apply {
+                    onCreate(Bundle())
+                    onResume()
+                    MapsInitializer.initialize(context)
+                    getMapAsync(this@VoteRecyclerViewAdapter)
+                }
             }
             else -> {
                 holder as ButtonViewHolder
@@ -81,10 +139,45 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
 
     private val voteButtonOnClickListener = View.OnClickListener {
         vote.respondingIds.add(Singleton.instance.activeUser!!.id)
-        checkedVariants.forEach {
+        mCheckedVariants.forEach {
             vote.variants[it] = Pair(vote.variants[it].first, vote.variants[it].second + 1)
         }
         notifyDataSetChanged()
+    }
+
+    override fun onMapReady(googleMap: GoogleMap) {
+        mGoogleMap = googleMap
+        vote as MapVote
+        var index = 0
+        vote.points.forEach {
+            mGoogleMap.addMarker(MarkerOptions()
+                    .title(vote.variants[index].first)
+                    .position(LatLng(it.first, it.second)))
+            index++
+        }
+        mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngBounds(getLatLngBounds(), 0));
+    }
+
+    private fun getLatLngBounds(): LatLngBounds {
+        vote as MapVote
+        var minLat = vote.points.first().first
+        var maxLat = vote.points.first().first
+        var minLng = vote.points.first().second
+        var maxLng = vote.points.first().second
+
+        vote.points.forEach {
+            if (minLat > it.first) minLat = it.first
+            if (maxLat < it.first) maxLat = it.first
+            if (minLng > it.second) minLng = it.second
+            if (maxLng < it.second) maxLng = it.second
+        }
+        val latVector = maxLat - minLat
+        val lngVector = maxLng - minLng
+        minLat += -latVector * 0.05
+        maxLat += latVector * 0.05
+        minLng += -lngVector * 0.05
+        maxLng += latVector * 0.05
+         return LatLngBounds(LatLng(minLat, minLng), LatLng(maxLat, maxLng))
     }
 
     class VoteElementViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -94,4 +187,8 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
     }
 
     class ButtonViewHolder(val button: Button) : RecyclerView.ViewHolder(button)
+
+    class MapViewHolder(val map: MapView) : RecyclerView.ViewHolder(map) {
+//        val map: MapView? = map.findViewById(R.id.map)
+    }
 }

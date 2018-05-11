@@ -23,7 +23,7 @@ class MockServerAPI: ServerAPI {
 
         sportsGround.add(SportsGround(0, Pair(59.873449, 29.828753), SportsKinds.Football, "PUNK Football field"))
         sportsGround.add(SportsGround(1, Pair(59.873826, 29.826848), SportsKinds.Basketball, "PUNK Basketball sportsground"))
-        sportsGround.add(SportsGround(2, Pair(59.873550, 29.826348), SportsKinds.Basketball, "Test0"))
+        sportsGround.add(SportsGround(2, Pair(59.849035, 30.143025), SportsKinds.Basketball, "Test0"))
         sportsGround.add(SportsGround(3, Pair(59.873760, 29.826448), SportsKinds.Basketball, "Test1"))
         sportsGround.add(SportsGround(4, Pair(59.873070, 29.826848), SportsKinds.Basketball, "Test2"))
         sportsGround.add(SportsGround(5, Pair(59.873380, 29.826348), SportsKinds.Basketball, "Test3"))
@@ -43,6 +43,16 @@ class MockServerAPI: ServerAPI {
         variants.add(Pair("18:30", 0))
         responding = ArrayList()
         votes.add(Vote(variants, responding))
+
+        variants = ArrayList()
+        variants.add(Pair("1", 1))
+        variants.add(Pair("2", 0))
+        responding = ArrayList()
+        responding.add(1)
+        var points = ArrayList<Pair<Double, Double>>()
+        points.add(sportsGround[0].coordinates)
+        points.add(sportsGround[2].coordinates)
+        votes.add(MapVote(variants, responding, points))
 
     }
 
@@ -181,6 +191,7 @@ class MockServerAPI: ServerAPI {
                     messages.add(Message("Great!", null, getUserById(1)!!))
                     messages.add(Message("What time you prefer?", votes[0], getUserById(0)!!))
                     messages.add(Message("Maybe like this?", votes[1], getUserById(1)!!))
+                    messages.add(Message("And where?", votes[2], getUserById(1)!!))
                     messages
                 }
                 1,2,3,4,5,6,7,8 -> ArrayList()

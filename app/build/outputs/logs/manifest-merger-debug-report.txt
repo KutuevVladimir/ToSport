@@ -7,16 +7,17 @@ INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest
 MERGED from [com.android.support:design:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/1ae9065b189cd9f9cfe5cf7f0ca3ae72/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6c627dfb741c33a894b87fc8e106e8f8/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/57d67f446906e13bc45390293ec5fd8b/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.gms:play-services-maps:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.0.aar/c1ae97af2b2bc5487efea4c7daeb92ef/AndroidManifest.xml:17:1-32:12
-MERGED from [com.google.android.gms:play-services-location:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.0.aar/587ccbf321d7757115464a3372ae3052/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-base:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.0.aar/98d4cde2f0ee7667d5ca8167ca76f527/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.0.aar/a160892c6dc8f02165d5e9495005d766/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-tasks:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.0.aar/05434bc211c56b1e6282f399d75a86d0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.0.aar/b9243ef20349b7060651fa16d99f5a11/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/e55e38d7547809d940744bca136418b3/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/38c0df722e8f3716131b657794d7607b/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/de01d7271b7a1be2b7b4419132b56490/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/aa6625ccc7bbc0d6d37dbe1411a0f873/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/d96a3189002edaa979f9845a16243f63/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/28e8b7c8d006905902ac5a58b1ed5d2b/AndroidManifest.xml:17:1-22:12
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/1c4fea56ef1d5cb10a306ccd176f1489/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:cardview-v7:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/e27b697fee3a74e5e6fc7877e05d78d4/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/admin/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/b984b32dcf5daa9073631757e5be692f/AndroidManifest.xml:2:1-13:12
+MERGED from [com.github.kittinunf.fuel:fuel-android:1.13.0] /home/admin/.gradle/caches/transforms-1/files-1.1/fuel-android-1.13.0.aar/3c4d8a826afcb999687c005a5fac9180/AndroidManifest.xml:2:1-10:12
 MERGED from [com.android.support:support-fragment:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/97dd8e25c94db8488414af4f431035f0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7b241a33b2359056a3abe3f22c82d7c0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/ca411cf82f2c034ece2e295604d63964/AndroidManifest.xml:17:1-22:12
@@ -49,8 +50,8 @@ INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest
 		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:5:5-67
-MERGED from [com.google.android.gms:play-services-maps:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.0.aar/c1ae97af2b2bc5487efea4c7daeb92ef/AndroidManifest.xml:24:5-67
-MERGED from [com.google.android.gms:play-services-maps:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.0.aar/c1ae97af2b2bc5487efea4c7daeb92ef/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:24:5-67
 	android:name
 		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
@@ -61,18 +62,18 @@ application
 ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:8:5-27:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/57d67f446906e13bc45390293ec5fd8b/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/57d67f446906e13bc45390293ec5fd8b/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-maps:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.0.aar/c1ae97af2b2bc5487efea4c7daeb92ef/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-maps:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.0.aar/c1ae97af2b2bc5487efea4c7daeb92ef/AndroidManifest.xml:30:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.0.aar/587ccbf321d7757115464a3372ae3052/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.0.aar/587ccbf321d7757115464a3372ae3052/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-base:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.0.aar/98d4cde2f0ee7667d5ca8167ca76f527/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.0.aar/98d4cde2f0ee7667d5ca8167ca76f527/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.0.aar/a160892c6dc8f02165d5e9495005d766/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.0.aar/a160892c6dc8f02165d5e9495005d766/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.0.aar/05434bc211c56b1e6282f399d75a86d0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.0.aar/05434bc211c56b1e6282f399d75a86d0/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.0.aar/b9243ef20349b7060651fa16d99f5a11/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.0.aar/b9243ef20349b7060651fa16d99f5a11/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/e55e38d7547809d940744bca136418b3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/e55e38d7547809d940744bca136418b3/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/38c0df722e8f3716131b657794d7607b/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/38c0df722e8f3716131b657794d7607b/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/de01d7271b7a1be2b7b4419132b56490/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/de01d7271b7a1be2b7b4419132b56490/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/aa6625ccc7bbc0d6d37dbe1411a0f873/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/aa6625ccc7bbc0d6d37dbe1411a0f873/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/d96a3189002edaa979f9845a16243f63/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/d96a3189002edaa979f9845a16243f63/AndroidManifest.xml:22:5-26:19
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/1c4fea56ef1d5cb10a306ccd176f1489/AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/1c4fea56ef1d5cb10a306ccd176f1489/AndroidManifest.xml:9:5-20
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/admin/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/b984b32dcf5daa9073631757e5be692f/AndroidManifest.xml:7:5-11:19
@@ -119,18 +120,18 @@ MERGED from [com.android.support:appcompat-v7:27.1.1] /home/admin/.gradle/caches
 MERGED from [com.android.support:appcompat-v7:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6c627dfb741c33a894b87fc8e106e8f8/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/57d67f446906e13bc45390293ec5fd8b/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/57d67f446906e13bc45390293ec5fd8b/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-maps:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.0.aar/c1ae97af2b2bc5487efea4c7daeb92ef/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.0.aar/c1ae97af2b2bc5487efea4c7daeb92ef/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.0.aar/587ccbf321d7757115464a3372ae3052/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.0.aar/587ccbf321d7757115464a3372ae3052/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.0.aar/98d4cde2f0ee7667d5ca8167ca76f527/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.0.aar/98d4cde2f0ee7667d5ca8167ca76f527/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.0.aar/a160892c6dc8f02165d5e9495005d766/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.0.aar/a160892c6dc8f02165d5e9495005d766/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.0.aar/05434bc211c56b1e6282f399d75a86d0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.0.aar/05434bc211c56b1e6282f399d75a86d0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.0.aar/b9243ef20349b7060651fa16d99f5a11/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.0.aar/b9243ef20349b7060651fa16d99f5a11/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/e55e38d7547809d940744bca136418b3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/e55e38d7547809d940744bca136418b3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/38c0df722e8f3716131b657794d7607b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/38c0df722e8f3716131b657794d7607b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/de01d7271b7a1be2b7b4419132b56490/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/de01d7271b7a1be2b7b4419132b56490/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/aa6625ccc7bbc0d6d37dbe1411a0f873/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/aa6625ccc7bbc0d6d37dbe1411a0f873/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/d96a3189002edaa979f9845a16243f63/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/d96a3189002edaa979f9845a16243f63/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/28e8b7c8d006905902ac5a58b1ed5d2b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/28e8b7c8d006905902ac5a58b1ed5d2b/AndroidManifest.xml:20:5-44
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/1c4fea56ef1d5cb10a306ccd176f1489/AndroidManifest.xml:5:5-7:41
@@ -139,6 +140,8 @@ MERGED from [com.android.support:cardview-v7:27.1.1] /home/admin/.gradle/caches/
 MERGED from [com.android.support:cardview-v7:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/e27b697fee3a74e5e6fc7877e05d78d4/AndroidManifest.xml:20:5-44
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/admin/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/b984b32dcf5daa9073631757e5be692f/AndroidManifest.xml:5:5-43
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/admin/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/b984b32dcf5daa9073631757e5be692f/AndroidManifest.xml:5:5-43
+MERGED from [com.github.kittinunf.fuel:fuel-android:1.13.0] /home/admin/.gradle/caches/transforms-1/files-1.1/fuel-android-1.13.0.aar/3c4d8a826afcb999687c005a5fac9180/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.kittinunf.fuel:fuel-android:1.13.0] /home/admin/.gradle/caches/transforms-1/files-1.1/fuel-android-1.13.0.aar/3c4d8a826afcb999687c005a5fac9180/AndroidManifest.xml:6:5-8:41
 MERGED from [com.android.support:support-fragment:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/97dd8e25c94db8488414af4f431035f0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/97dd8e25c94db8488414af4f431035f0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/7b241a33b2359056a3abe3f22c82d7c0/AndroidManifest.xml:20:5-44
@@ -176,28 +179,28 @@ INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest
 		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml
 		INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.0.aar/c1ae97af2b2bc5487efea4c7daeb92ef/AndroidManifest.xml:23:5-79
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:23:5-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.0.aar/c1ae97af2b2bc5487efea4c7daeb92ef/AndroidManifest.xml:23:22-76
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:23:22-76
 uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.0.aar/c1ae97af2b2bc5487efea4c7daeb92ef/AndroidManifest.xml:26:5-28:35
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.0.aar/c1ae97af2b2bc5487efea4c7daeb92ef/AndroidManifest.xml:27:9-41
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:27:9-41
 	android:required
-		ADDED from [com.google.android.gms:play-services-maps:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.0.aar/c1ae97af2b2bc5487efea4c7daeb92ef/AndroidManifest.xml:28:9-32
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:28:9-32
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.0.aar/98d4cde2f0ee7667d5ca8167ca76f527/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/38c0df722e8f3716131b657794d7607b/AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.0.aar/98d4cde2f0ee7667d5ca8167ca76f527/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/38c0df722e8f3716131b657794d7607b/AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.0.aar/98d4cde2f0ee7667d5ca8167ca76f527/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/38c0df722e8f3716131b657794d7607b/AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.0.aar/98d4cde2f0ee7667d5ca8167ca76f527/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/38c0df722e8f3716131b657794d7607b/AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.0.aar/b9243ef20349b7060651fa16d99f5a11/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/d96a3189002edaa979f9845a16243f63/AndroidManifest.xml:23:9-25:69
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/admin/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/b984b32dcf5daa9073631757e5be692f/AndroidManifest.xml:8:9-10:69
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/admin/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/b984b32dcf5daa9073631757e5be692f/AndroidManifest.xml:8:9-10:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.0.aar/b9243ef20349b7060651fa16d99f5a11/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/d96a3189002edaa979f9845a16243f63/AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:15.0.0] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.0.aar/b9243ef20349b7060651fa16d99f5a11/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/d96a3189002edaa979f9845a16243f63/AndroidManifest.xml:24:13-58
