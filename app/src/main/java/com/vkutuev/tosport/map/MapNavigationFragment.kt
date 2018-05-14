@@ -5,18 +5,27 @@ import android.app.Fragment
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import com.google.android.gms.maps.*
 import com.google.maps.android.clustering.ClusterManager
 import com.vkutuev.tosport.R
 import com.vkutuev.tosport.Singleton
+import com.vkutuev.tosport.map.sportsground.AddSportGroundFragment
 import com.vkutuev.tosport.map.sportsground.SportsGroundFragment
 import kotlinx.coroutines.experimental.CommonPool
 import kotlinx.coroutines.experimental.android.UI
 import kotlinx.coroutines.experimental.async
 import kotlinx.coroutines.experimental.launch
+
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.maps.model.MarkerOptions
+
+
+
+
+
 
 const val PERMISSION_LOCATION = 1
 
@@ -24,6 +33,8 @@ class MapFragment : Fragment(), OnMapReadyCallback {
 
     private lateinit var mMap: GoogleMap
     private lateinit var mClusterManager: ClusterManager<AbstractMarker>
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
+
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val mapFragmentView = inflater?.inflate(R.layout.map_layout, container, false)!!
@@ -38,8 +49,10 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         } catch (e: Exception) {
             e.printStackTrace()
         }
-
         mapView.getMapAsync(this)
+
+        setHasOptionsMenu(true)
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(activity)
         return mapFragmentView
     }
 
@@ -66,10 +79,16 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         if (ContextCompat.checkSelfPermission(activity, android.Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
             mMap.isMyLocationEnabled = true
+            fusedLocationClient.lastLocation.addOnSuccessListener {location ->
+                with(location) {
+                    mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(latitude, longitude), 15f))
+                }
+            }
         }
         else {
             requestPermissions(arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION), PERMISSION_LOCATION)
         }
+        mClusterManager.cluster()
     }
 
     private val mOnClusterItemClickListener = ClusterManager.OnClusterItemClickListener<AbstractMarker> {
@@ -93,6 +112,11 @@ class MapFragment : Fragment(), OnMapReadyCallback {
             PERMISSION_LOCATION -> {
                 if (grantResults.isEmpty() && permissions[0] == android.Manifest.permission.ACCESS_FINE_LOCATION) {
                     mMap.isMyLocationEnabled = true
+                    fusedLocationClient.lastLocation.addOnSuccessListener {location ->
+                        with(location) {
+                            mMap.moveCamera(CameraUpdateFactory.newLatLng(LatLng(latitude, longitude)))
+                        }
+                    }
                 }
                 else {
                     // Permission was denied. Display an error message.
@@ -101,5 +125,21 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         }
     }
 
+    private val mOnMenuItemClickListener = MenuItem.OnMenuItemClickListener {
+        val sgFragment = AddSportGroundFragment()
+        Singleton.instance.fragmentManager.beginTransaction()
+                .replace(R.id.content_frame, sgFragment)
+                .addToBackStack(sgFragment.toString())
+                .commit()
+        true
+    }
 
+    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
+        menu?.add(0, View.generateViewId(), 0, R.string.add)
+                ?.setOnMenuItemClickListener(mOnMenuItemClickListener)
+                ?.setIcon(android.R.drawable.ic_input_add)
+                ?.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS or MenuItem.SHOW_AS_ACTION_WITH_TEXT)
+
+        super.onCreateOptionsMenu(menu, inflater)
+    }
 }

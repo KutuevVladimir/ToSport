@@ -12,7 +12,7 @@ import com.vkutuev.tosport.map.MapFragment
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mNavigation: BottomNavigationView
-    private var mCurrentFragmentId: Int = R.layout.chats_layout
+    private var mCurrentFragmentId: Int = 0
 
     private val mMapNavigationFragment = MapFragment()
     private val mChatsNavigationFragment = ChatsNavigationFragment()
@@ -21,9 +21,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         mNavigation = findViewById(R.id.bottomNavigationView)
-        mNavigation.selectedItemId = R.id.navigation_account
+        mNavigation.selectedItemId = R.id.navigation_map
         mNavigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener)
         Singleton.instance.fragmentManager = fragmentManager
+
+        if (fragmentManager.backStackEntryCount == 0) {
+            mCurrentFragmentId = R.layout.map_layout
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_frame, mMapNavigationFragment)
+                    .addToBackStack(mMapNavigationFragment.toString())
+                    .commit()
+        }
     }
 
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
@@ -73,4 +81,5 @@ class MainActivity : AppCompatActivity() {
         }
         result
     }
+
 }

@@ -18,7 +18,7 @@ import kotlinx.coroutines.experimental.launch
 
 class ChatFragment : Fragment() {
 
-    lateinit var mMenu: BottomNavigationView
+    lateinit var mBottomMenu: BottomNavigationView
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val layout = inflater!!.inflate(R.layout.chat_layout, container, false)
@@ -35,14 +35,14 @@ class ChatFragment : Fragment() {
             mRecyclerView.adapter = MessagesRecyclerViewAdapter(messages)
         }
 
-        mMenu = activity.findViewById(R.id.bottomNavigationView)
-        mMenu.visibility = View.GONE
+        mBottomMenu = activity.findViewById(R.id.bottomNavigationView)
+        mBottomMenu.visibility = View.GONE
 
         return layout
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
-        mMenu.visibility = View.VISIBLE
+        mBottomMenu.visibility = View.VISIBLE
     }
 }

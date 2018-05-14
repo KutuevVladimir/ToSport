@@ -41,19 +41,6 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
 
     private val mMapId = View.generateViewId()
     private lateinit var mGoogleMap: GoogleMap
-    private val cameraPosition: LatLng by lazy {
-        var latitude = 0.0
-        var longitude = 0.0
-        if (vote is MapVote) {
-            vote.points.forEach {
-                latitude += it.first
-                longitude += it.second
-            }
-            latitude /= vote.points.size
-            longitude /= vote.points.size
-        }
-        return@lazy LatLng(latitude, longitude)
-    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder =
             when (viewType) {
@@ -62,13 +49,8 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
                     VoteElementViewHolder(view)
                 }
                 MAP -> {
-//                    val mapFragmentView = LayoutInflater
-//                            .from(parent.context)
-//                            .inflate(R.layout.map_layout, parent, false)!!
-//                    MapViewHolder(mapFragmentView)
                     val mapOptions = GoogleMapOptions()
                             .liteMode(true)
-                            .camera(CameraPosition(cameraPosition, 10f, 0f, 0f))
                     val map = MapView(parent.context, mapOptions).apply {
                         id = mMapId
                         layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, 480)
@@ -87,7 +69,7 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
             }
             position == vote.variants.size-> BUTTON
             else -> VOTE_VARIANT
-        }
+            }
 
     override fun getItemCount(): Int {
         var count = vote.variants.size
@@ -104,14 +86,14 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
             VOTE_VARIANT -> {
                 val index = position + mPositionOffset
                 holder as VoteElementViewHolder
-                holder.text?.text = "${position + 1}) ${vote.variants[index].first}"
+                holder.text?.text = "${index + 1}) ${vote.variants[index].first}"
                 holder.progressBar?.apply {
                     max = mMaxVotesCount
                     progress = vote.variants[index].second
                 }
 
                 if (vote.respondingIds.contains(Singleton.instance.activeUser!!.id))
-                    holder.checkBox?.visibility = View.GONE
+                    holder.checkBox?.visibility = View.INVISIBLE//View.GONE Problem with progress bar
                 else
                     holder.checkBox?.setOnCheckedChangeListener { buttonView, isChecked ->
                         if (isChecked)
@@ -147,6 +129,7 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
 
     override fun onMapReady(googleMap: GoogleMap) {
         mGoogleMap = googleMap
+        mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngBounds(getLatLngBounds(), 0))
         vote as MapVote
         var index = 0
         vote.points.forEach {
@@ -155,7 +138,6 @@ class VoteRecyclerViewAdapter(private val vote: Vote) : RecyclerView.Adapter<Rec
                     .position(LatLng(it.first, it.second)))
             index++
         }
-        mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngBounds(getLatLngBounds(), 0));
     }
 
     private fun getLatLngBounds(): LatLngBounds {
