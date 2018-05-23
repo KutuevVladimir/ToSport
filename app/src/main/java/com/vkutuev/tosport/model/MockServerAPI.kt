@@ -7,7 +7,7 @@ class MockServerAPI: ServerAPI {
     private val users = HashMap<Int, String>()
     private val sportsGround = ArrayList<SportsGround>()
     private val votes = ArrayList<Vote>()
-
+    private val sportsGroundPhotos = HashMap<Int, Bitmap>()
 
     init {
         users[0] = "VKutuev"
@@ -135,6 +135,13 @@ class MockServerAPI: ServerAPI {
             else -> getUserById(1)!!
         }
 
+    override fun getSportsGroundPhoto(sportsGroundId: Int): Bitmap? =
+            sportsGroundPhotos[sportsGroundId]
+
+    override fun setSportsGroundPhoto(sportsGroundId: Int, bitmap: Bitmap) {
+        sportsGroundPhotos[sportsGroundId] = bitmap
+    }
+
     override fun createSportsGround(sportsGround: SportsGround) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
@@ -178,6 +185,7 @@ class MockServerAPI: ServerAPI {
                 0 -> {
                     val messages = ArrayList<Message>()
                     messages.add(Message("Hello", null, getUserById(0)!!))
+                    messages.add(Message("Where?", votes[2], getUserById(1)!!))
                     messages.add(Message("Hi", null, getUserById(1)!!))
                     messages.add(Message("W", null, getUserById(0)!!))
                     messages.add(Message("H", null, getUserById(0)!!))
@@ -191,7 +199,6 @@ class MockServerAPI: ServerAPI {
                     messages.add(Message("Great!", null, getUserById(1)!!))
                     messages.add(Message("What time you prefer?", votes[0], getUserById(0)!!))
                     messages.add(Message("Maybe like this?", votes[1], getUserById(1)!!))
-                    messages.add(Message("And where?", votes[2], getUserById(1)!!))
                     messages
                 }
                 1,2,3,4,5,6,7,8 -> ArrayList()

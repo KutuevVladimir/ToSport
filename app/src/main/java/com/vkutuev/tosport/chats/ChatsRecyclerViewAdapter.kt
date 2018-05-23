@@ -1,7 +1,8 @@
 package com.vkutuev.tosport.chats
 
+import android.graphics.Bitmap
+import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
-import android.provider.Settings.Global.getString
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,8 @@ import com.vkutuev.tosport.R
 import com.vkutuev.tosport.Singleton
 import com.vkutuev.tosport.chats.messages.ChatFragment
 import com.vkutuev.tosport.model.Chat
+import kotlinx.coroutines.experimental.android.UI
+import kotlinx.coroutines.experimental.launch
 
 class ChatsRecyclerViewAdapter(private val chats: ArrayList<Chat>) : RecyclerView.Adapter<ChatsRecyclerViewAdapter.ViewHolder>() {
 
@@ -31,9 +34,9 @@ class ChatsRecyclerViewAdapter(private val chats: ArrayList<Chat>) : RecyclerVie
             holder.chatIcon.setImageBitmap(chat.photo)
         }
         else {
-            holder.chatIcon.setImageResource(R.drawable.ic_no_avatar)
-//            holder.chatIcon.setImageDrawable()
-            // TODO if there is not avatar photo then set a ic_no_avatar
+            launch(UI) {
+                holder.chatIcon.setImageResource(R.drawable.ic_no_avatar)
+            }
         }
 
         holder.chatTitle.setOnClickListener {

@@ -1,4 +1,4 @@
-#Mon May 14 12:04:07 MSK 2018
+#Thu May 24 01:35:30 MSK 2018
 base.0=/home/admin/Documents/Android/ToSport/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

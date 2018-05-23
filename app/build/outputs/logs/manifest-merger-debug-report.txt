@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-29:12
+ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-30:12
 MERGED from [com.android.support:design:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/1ae9065b189cd9f9cfe5cf7f0ca3ae72/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:appcompat-v7:27.1.1] /home/admin/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/6c627dfb741c33a894b87fc8e106e8f8/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/57d67f446906e13bc45390293ec5fd8b/AndroidManifest.xml:2:1-11:12
@@ -31,20 +31,20 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/admin/.gradle/cac
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/9a1791d0191bc736e8a97f439c17c357/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/7ba22c2f09dac54237811be14ffec6ea/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/c31b97878cf9558bbb3d6b78466c428d/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:3:5-34
 		INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml
 		INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-29:12
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-30:12
 		INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-29:12
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:1-30:12
 		INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:2:11-69
@@ -58,8 +58,12 @@ uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
 		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE 
+ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:7:22-78
 application
-ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:8:5-27:19
+ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:9:5-28:19
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/57d67f446906e13bc45390293ec5fd8b/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/admin/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/57d67f446906e13bc45390293ec5fd8b/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/admin/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/f819d1195f5a3c1bc2e42c691ba15a03/AndroidManifest.xml:30:5-20
@@ -79,37 +83,37 @@ MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/admin/.gradle/caches/tran
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/admin/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/b984b32dcf5daa9073631757e5be692f/AndroidManifest.xml:7:5-11:19
 MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/admin/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/b984b32dcf5daa9073631757e5be692f/AndroidManifest.xml:7:5-11:19
 	android:supportsRtl
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:14:9-40
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:15:9-40
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:16:9-18:71
+ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:17:9-19:71
 	android:value
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:18:13-68
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:19:13-68
 	android:name
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:17:13-58
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:18:13-58
 activity#com.vkutuev.tosport.MainActivity
-ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:20:9-26:20
+ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:21:9-27:20
 	android:name
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:20:19-47
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:21:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:21:13-25:29
+ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:22:17-69
+ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:22:25-66
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:24:17-77
+ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:24:27-74
+		ADDED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml:25:27-74
 uses-sdk
 INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/admin/Documents/Android/ToSport/app/src/main/AndroidManifest.xml

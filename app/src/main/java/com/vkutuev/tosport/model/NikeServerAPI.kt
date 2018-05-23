@@ -3,7 +3,13 @@ package com.vkutuev.tosport.model
 import android.graphics.Bitmap
 
 class NikeServerAPI : ServerAPI {
+    override fun getSportsGroundPhoto(sportsGroundId: Int): Bitmap? {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
+    override fun setSportsGroundPhoto(sportsGroundId: Int, bitmap: Bitmap) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
     override fun createUser(user: User): Int {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.

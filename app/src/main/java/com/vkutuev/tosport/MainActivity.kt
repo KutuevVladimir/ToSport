@@ -1,6 +1,7 @@
 package com.vkutuev.tosport
 
 import android.app.Fragment
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.FragmentManager

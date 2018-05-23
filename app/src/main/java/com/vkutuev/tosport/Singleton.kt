@@ -1,6 +1,7 @@
 package com.vkutuev.tosport
 
 import android.app.FragmentManager
+import android.graphics.Bitmap
 import com.vkutuev.tosport.model.MockServerAPI
 import com.vkutuev.tosport.model.ServerAPI
 import com.vkutuev.tosport.model.User

@@ -21,13 +21,7 @@ import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.model.MarkerOptions
-
-
-
-
-
-
-const val PERMISSION_LOCATION = 1
+import com.vkutuev.tosport.PermissionCodes
 
 class MapFragment : Fragment(), OnMapReadyCallback {
 
@@ -86,7 +80,7 @@ class MapFragment : Fragment(), OnMapReadyCallback {
             }
         }
         else {
-            requestPermissions(arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION), PERMISSION_LOCATION)
+            requestPermissions(arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION), PermissionCodes.Location.permissionCode)
         }
         mClusterManager.cluster()
     }
@@ -109,8 +103,8 @@ class MapFragment : Fragment(), OnMapReadyCallback {
     @SuppressLint("MissingPermission")
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
         when (requestCode) {
-            PERMISSION_LOCATION -> {
-                if (grantResults.isEmpty() && permissions[0] == android.Manifest.permission.ACCESS_FINE_LOCATION) {
+            PermissionCodes.Location.permissionCode -> {
+                if (grantResults.isNotEmpty() && permissions[0] == android.Manifest.permission.ACCESS_FINE_LOCATION) {
                     mMap.isMyLocationEnabled = true
                     fusedLocationClient.lastLocation.addOnSuccessListener {location ->
                         with(location) {
@@ -123,6 +117,7 @@ class MapFragment : Fragment(), OnMapReadyCallback {
                 }
             }
         }
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
     }
 
     private val mOnMenuItemClickListener = MenuItem.OnMenuItemClickListener {

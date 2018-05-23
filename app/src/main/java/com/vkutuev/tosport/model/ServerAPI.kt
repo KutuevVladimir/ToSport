@@ -17,6 +17,8 @@ interface ServerAPI {
     fun getChatPhoto(chatId: Int): Bitmap?
     fun getSportsGroundsList(): List<SportsGround>
     fun getSportsGroundInformation(sportsGroundId: Int): SportsGround?
+    fun getSportsGroundPhoto(sportsGroundId: Int): Bitmap?
+    fun setSportsGroundPhoto(sportsGroundId: Int, bitmap: Bitmap)
     fun getSportsGroundAdmin(sportsGroundId: Int): User
     fun createSportsGround(sportsGround: SportsGround)
 }
